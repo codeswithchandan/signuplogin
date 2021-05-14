@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: #eee;
+}
+
+button {
+    background: #FF4949;
+    border: none;
+}
+
+button {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+}
+
+.signup,
+.login {
+    width: 35%;
+    margin: 0px auto;
+    background: #fff;
+    padding: 40px 40px 30px 40px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+    display: none;
+    border: 1px dotted #FF4949;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 13px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    cursor: pointer;
+    background: #FF4949;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .signup,
+    .login {
+        width: 90%;
+        padding: 20px;
+    }
+}

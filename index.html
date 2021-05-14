@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Popup Signup form toggle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <button class="signbtn">SignUp</button>
+    <button class="loginbtn">Login</button>
+    <br><br><br><br><br>
+    <div class="signup">
+        <form>
+            <input type="text" name="first-name" placeholder="First Name" required="">
+            <input type="text" name="last-name" placeholder="Last Name" required="">
+            <input type="number" name="mobile" placeholder="Mobile Number" required="">
+            <input type="email" name="email" placeholder="Email" required="">
+            <input type="text" name="username" placeholder="User Name" required="">
+            <input type="text" name="password" placeholder="Password" required="">
+            <input type="text" name="confirm-password" placeholder="Confirm Password" required="">
+            <input type="submit" name="submit" value="Sign Up">
+        </form>
+    </div>
+    <div class="login">
+        <form>
+            <input type="text" name="username" placeholder="User Name" required="">
+            <input type="text" name="password" placeholder="Password" required="">
+            <input type="submit" name="submit" value="Login">
+        </form>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $(".signbtn").click(function() {
+            $(".signup").toggle(600);
+            $(".login").hide();
+        });
+
+        $(".loginbtn").click(function() {
+            $(".login").toggle(600);
+            $(".signup").hide();
+        });
+    });
+    </script>
+</body>
+
+</html>
